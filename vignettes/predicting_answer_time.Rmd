@@ -1,0 +1,27 @@
+---
+title: "Predicting Time to Answer a Question"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Predicting Time to Answer a Question}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(r4dsnlp)
+```
+
+After a user asks a question, answers are sometimes immediate, and sometimes take a long back-and-forth discussion before the question is resolved.
+Here we attempt to predict how long it will take for a question to be answered.
+
+## Definitions
+
+* **question_start_ts:** The timestamp on which the question was posted.
+* **question_resolution_ts:** The timestamp on which the question was marked as resolved using the "heavy_check_mark" convention used by the R4DS Online Learning Community mentors.

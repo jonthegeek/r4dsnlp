@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# r4dsnlp
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of r4dsnlp is to analyze the text of questions and answers on the [R4DS Online Learning Community](https://r4ds.online) Slack.
+
+## Installation
+
+You can install r4dsnlp from [GitHub](https://github.com/) with:
+
+``` r
+devtools::install_github(
+  "jonthegeek/r4dsnlp",
+  build_vignettes = TRUE
+)
+```
+
+## Analysis
+
+The analysis will be available in a series of package vignettes.
